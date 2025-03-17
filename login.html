@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div class="title">
+        WELCOME TO SAMUEL'S LAND INTERNATIONAL
+    </div>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button onclick="messageAlert()" class="btn">Login</button>            <!-- <button type="submit" class="btn">Login</button> -->
+        </form>
+        <a href="forgot-password" class="forgot-password">Forgot password?</a>   <!-- <a href="forgot-password.html" class="forgot-password">Forgot password?</a> -->
+        <a href="sign-up" class="Sign-up">Sign-up</a>                 <!-- Remove this when you can auth users with a DB -->
+        <a href="/" class="home">Home</a>
+    </div>
+    <script>
+        function messageAlert() {
+            alert('Thank you for testing, but no database yet!');
+            // You can replace the alert with redirection or other functionality
+            // e.g., window.location.href = 'feedback.html';
+        }
+    </script>
+</body>
+</html>
